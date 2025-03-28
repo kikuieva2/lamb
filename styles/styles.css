@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 .container{
     margin:0 auto;
 }
 .page--one{
     background: #F8C109;
+    min-height: 100vh;
 }
 img{
     width:100%;
@@ -27,6 +23,9 @@ img{
     display: flex;
     justify-content: space-between;
     padding: 14px 12px 21px;
+}
+.arrow{
+    transform: rotate(-90deg);
 }
 .inner--lambo__content{
     display: flex;
@@ -51,7 +50,6 @@ img{
     font-weight: 500;
     line-height: 130%;
     position:relative;
-    margin-bottom: 7px;
     animation: blink 2s infinite alternate;
 }
 .sign__txt{
@@ -124,9 +122,6 @@ img{
 }
 .lamb__wrapper--content{
     position:relative;
-}
-.lamb__wrapper--content img{
-    border:none;
 }
 .lamb-rectangle{
     top: 50%;
@@ -236,6 +231,9 @@ img{
     justify-content: center;
     padding-top: 11px;
 }
+.lamb{
+    border: 1px solid #161101;
+}
 .inner__image--slider {
     display: flex;
     gap: 4px;
@@ -251,12 +249,6 @@ img{
 .dot.active {
     background-color: #F8C109;
 }
-.lamb__text--content {
-    border-bottom: 1px solid #EDEDED;
-}
-.this__title{
-    padding-bottom: 30px;
-}
 .lamb__inner--txt {
     display: flex;
     flex-direction: column;
@@ -267,7 +259,6 @@ img{
     width:30px;
     height:30px;
 }
-
 .lamb__button--container img{
     width: 18px;
     height: 18px;
@@ -277,16 +268,18 @@ img{
     left: 408px;
     top: 10px;
 }
+ .lamb__button--container{
+    display:flex;
+    margin-top: 24px;
+}
+
 .warning--information{
     display: flex;
     gap: 8px;
 }
 .warning--information img{
-    width:20px;
-    height:20px;
-}
-.lamb__button--container{
-    display: flex;
+    width:24px;
+    height:24px;
 }
 .contact__image{
    border:none;
@@ -354,10 +347,13 @@ img{
     position:relative;
 }
 .close--btn img{
-    width:24px;
+    width:14px;
     position:absolute;
     top:8px;
     right:8px;
+}
+.info{
+    text-align: center;
 }
 .close--btn{
     cursor:pointer;
@@ -366,11 +362,10 @@ img{
     display: flex;
     gap: 12px;
     flex-direction: column;
-    padding-bottom:24px;
 }
 .information__subtitle{
     color: #ADACAC;
-    /* text-align: center; */
+    text-align: center;
     font-family: Rubik;
     font-size: 15px;
     font-style: normal;
@@ -393,12 +388,15 @@ img{
     flex-direction: column;
     padding-top: 27px;
     gap: 20px;
-    border-bottom: 1px solid #EDEDED;
+    /* border-bottom: 1px solid #EDEDED; */
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .lamb__image{
     display: flex;
     gap: 13px;
     border-bottom: 1px solid #EDEDED;
+    padding-left: 19px;
 }
 a{
     text-decoration:none;
@@ -433,12 +431,6 @@ a{
     align-items: center;
     cursor: pointer;
 }
-.this__title{
-    text-align: center;
-}
-.lamb__text{
-    padding-bottom: 22px;
-}
 .sign__out{
     width:22px;
 }
@@ -448,7 +440,7 @@ a{
     margin: 16px;
 }
 .arrow{
-    width: 24px;
+    width: 14px;
 }
 .confirmation__blur{
     background: rgba(0, 0, 0, 0.60);
@@ -520,6 +512,9 @@ a{
     border-radius: 16px 16px 0 0;
     background: white;
 }
+.main--lamb__content{
+    border-bottom: 1px solid #ededed;
+}
 .btn:hover {
     background: #E0AD08;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -533,17 +528,6 @@ a{
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-}
-.lamb__title{
-    color: #161101;
-    font-family: Rubik;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    padding-top: 32px;
-    padding-left: 16px;
 }
 .lamb__input--content{
     padding: 16px 16px 26px;
@@ -614,14 +598,6 @@ input:focus{
 .contact__image{
     border:none;
 }
-.lamb__inner--contact{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 114px;
-    padding-left: 29px;
-    padding-right: 29px;
-}
-
 .border{
     border-right: 1px solid #EBEBEB;
 }
@@ -662,13 +638,13 @@ input:focus {
 }
 .image__content{
     width: 100%;
-    margin:16px;
+    padding:16px;
 }
 .inner__lamb__btn--container{
     display: flex;
     gap: 12px;
+    margin: 0 16px 12px;
 }
-
 .image__content img{
     object-fit: cover;
     border-radius: 4px;
@@ -701,11 +677,6 @@ input:focus {
 .blog__arrow--content img{
     cursor:pointer;
 }
-.lamb__icons--img{
-    width:20px;
-    height:20px;
-
-}
 .lamb__list__image--container img{
     width:45px;
     height:45px;
@@ -714,15 +685,6 @@ input:focus {
 .image{
     width:30px;
     height:30px;
-}
-.call__txt{
-    color: #161101;
-    font-family: Rubik;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
 }
 .lamb__icons--img {
     display: flex;
@@ -735,6 +697,7 @@ input:focus {
 }
 .lamb__list__image--container{
     display: flex;
+    margin: 6px 0 6px 0;
 }
 .btn__back--container{
     padding-top: 19px;
@@ -758,28 +721,7 @@ input:focus {
 .btn__list--content{
    display: flex;
 }
-/* .{
-    display: flex;
-    height: 42px;
-    padding: 10px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #523F0B;
-    font-family: Rubik;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 4px;
-    background: #F8C109;
-    border: none;
-    ouaccept__btntline: none;
-    flex:1;
-    width: 166px;
-    cursor: pointer;
-    
-} */
+
 .decline__btn{
     display: flex;
     height: 42px;
@@ -798,6 +740,8 @@ input:focus {
     border-radius:4px;
     width: 166px;
     flex:1;
+    border-radius: 4px;
+    background: #EDEDED;
     cursor: pointer;
 }  
 .btn__list--content img{
@@ -820,8 +764,6 @@ input:focus {
 .inner__select{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #EDEDED;
-    padding-left: 16px;
     padding-top: 14px;
     padding-bottom:14px;
 }
@@ -831,7 +773,7 @@ input:focus {
     transition:0.2s;
 }
 .decline__btn:hover {
-    background-color: #E0E0E0; /* Nedaudz tumšāks tonis */
+    background-color: #E0E0E0; 
     cursor: pointer;
     transition:0.2s;
 }
@@ -854,16 +796,6 @@ input:focus {
 .inner--info .lamb__date {
     padding: 0;
 }
-.info__txt {
-    color: #161101;
-    font-family: Rubik;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #EFEFEE;
-}
 .loc__container {
     padding: 0 16px 20px;
 }
@@ -882,10 +814,6 @@ input:focus {
     border-top: 1px solid #EDEDED;
     position: relative;
 }
-.lamb__action--images img{
-    width: 30px;
-    height: 30px;
-}
 .location__image--content img {
     border: 1px solid #EDEDED;
     border-radius: 4px;
@@ -896,6 +824,9 @@ input:focus {
 }
 .lamb__action--img{
     display: flex;
+    margin-left: 16px;
+    margin-bottom: 6px;
+    margin-top: 18px;
 }
 .action__num--txt{
     color: #161101;
@@ -905,6 +836,10 @@ input:focus {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+    gap: 5px;
 }
 .num{
     color: #F8C109;
@@ -918,6 +853,7 @@ input:focus {
 .lamb__action--images{
     display:flex;
     gap:17px;
+    align-items: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
@@ -930,12 +866,13 @@ input:focus {
 .container{
     margin:0 auto;
 }
-.content{
-    background:red;
-}
 
 .page-two{
     background: #FFF4D1;
+}
+.round{
+    width:30px;
+    height:30px;
 }
 .page-one{
     background: #F8C109;
@@ -967,31 +904,11 @@ input:focus {
     border-top: 1px solid #EDEDED;
     position: relative;
 }
-.time{
-    color: #000;
-    text-align: center;
-    font-family: "SF Pro Display";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.3px;
-}
-.lamb__wrapper--content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-}
 .lamb__image--content img{
-    border: 1px solid #161101;
     width: 157px;
 }
 .lamb__image{
     justify-content: space-between;
-}
-.lamb__wrapper--content img{
-    border:none;
 }
 .app__txt{
     color: #F8C109;
@@ -1069,28 +986,6 @@ input:focus {
 }
 .lamb__text--container{
     padding-right: 10px;
-    border-bottom: 1px solid #EDEDED;
-}
-.lamb__text--content{
-    border-bottom: 1px solid #EDEDED;
-}
-.call__txt{
-    color: #161101;
-    font-family: Rubik;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-}
-.lamb__icons--img{
-    display: flex;
-    gap: 16px;
-}
-.inner__lamb__btn--container{
-    display:flex;
-    gap:12px;
-
 }
 .lamb__btn{
     border-radius: 4px;
@@ -1112,7 +1007,9 @@ input:focus {
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
+    margin: 22px 16px 8px;
 }
+
 .contact{
     color: #161101;
     font-family: Rubik;
@@ -1159,12 +1056,6 @@ a{
     padding-bottom: 54px;
     line-height: normal;
 }
-.lamb__inner--txt{
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    padding-top: 31px;
-}
 .lamb__image-slider{
     display: flex;
     align-items: center;
@@ -1174,7 +1065,7 @@ a{
 .lamb__inner--contact{
     display: flex;
     justify-content: space-between;
-    padding: 111px 29px 20px;
+    padding: 20px 29px 20px;
 }
 .inner__image--slider{
     display: flex;
@@ -1210,7 +1101,8 @@ a{
     border:none;
 }
 .lamb__txt--container{
-    padding-right: 56px;
+    display: flex;
+    align-items: center;
 }
 .blog__num{
     color: #ADACAC;
@@ -1227,15 +1119,6 @@ a{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
-.lamb__date{
-    color: #ADACAC;
-    font-family: Rubik;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 50px;
 }
 .lamb__blog{
     display: flex;
@@ -1257,18 +1140,11 @@ a{
     padding-top: 20px;
 }
 .lamb__job__list--container{
-    border-bottom: 1px solid #EDEDED;
     padding: 0 16px;
 }
 .lamb__blog--container{
     border-bottom: 1px solid #EDEDED;
 }
- .renault--container{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding:24px 16px;
-    border-bottom: 1px solid #EDEDED;
-} 
 .lamb__action--img img{
     width: 45px;
 }
@@ -1278,18 +1154,17 @@ a{
 }
 .lamb__action__container{
     border-bottom: 1px solid #EDEDED;
+    padding: 6px 16px;
 }
 .lamb__action--images .phone{
     width:20px;
     height:20px;
 }
 .lamb__action--images img{
-    width: 30px;
-    height: 30px;
+    width:30px;
 }
 .lamb__action--container {
     border-bottom: 1px solid #EDEDED;
-    padding-bottom: 6px;
 }
 .lamb__action--text {
     display: flex;
@@ -1334,11 +1209,11 @@ a{
     display: flex;
     gap: 17px;
 }
-.lamb__action--images img {
-    width: 30px;
-    height: 30px;
+/* .lamb__action--images img {
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-}
+} */
 .back__btn{
     border: none;
     outline: none;
@@ -1349,10 +1224,6 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-.back--btn__content{
-    display: flex;
-    gap: 8px;
 }
 .inner--back__btn{
     padding-top: 16px;
@@ -1381,20 +1252,26 @@ a{
     flex: 1;
     margin: 24px 16px;
 }
-.lamb--action__container{
-    padding-left: 18px;
-}
 .inner--sign img{
     width:18px;
     height:18px;
 }
-.call__txt{
+.call__text{
     color: #523F0B;
     font-family: Rubik;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.call__txt{
+    color: #161101;
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }
 .elipse{
     width:8px;
@@ -1442,25 +1319,6 @@ a{
     cursor: pointer;
     
 }
-.decline__btn{
-    display: flex;
-    height: 42px;
-    padding: 10px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: none;
-    outline: none;
-    color: #161101;
-    font-family: Rubik;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-radius:4px;
-    width: 166px;
-    cursor: pointer;
-}  
 .lamb__container__button{
     display: flex;
     gap: 12px;
@@ -1493,7 +1351,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 6px;
-    padding: 0 11px;
+    margin:19px;
 }
 .input__title{
     color: #161101;
@@ -1518,21 +1376,11 @@ a{
 .lamb--inner__input{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding-top: 20px;
 }
 .info{
     border-bottom:none;
 }
-.input__title{
-    color: #161101;
-    font-family: Rubik;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .num__txt{
     color: #161101;
     font-family: Rubik;
@@ -1560,7 +1408,6 @@ a{
     padding-bottom: 5px;
 }
 .lamb__btn--container{
-    padding: 16px 16px 12px;
     display: flex;
 }
 .input{
@@ -1569,10 +1416,14 @@ a{
 .input__first{
     padding-top:20px;
 }
+.lamb__signature--container{
+    display: flex;
+}
 .issue{
     display:flex;
     flex-direction: row;
     gap:5px;
+    align-items: center;
 }
 .client{
     color: #161101;
@@ -1603,10 +1454,6 @@ a{
 .signature__text--content{
     padding-top: 12px;
     padding-left: 10px;
-}
-
-.lamb--signature{
-    border-bottom:1px solid #EDEDED;
 }
 .signature{
     color: rgba(22, 17, 1, 0.20);
@@ -1649,7 +1496,7 @@ a{
 .sign__out--content{
     display: flex;
     flex: 1;
-    margin: 83px 16px 0;
+    margin: 83px 6px 12px;
 }
 .inner__sign__out{
     display: flex;
@@ -1658,10 +1505,7 @@ a{
 }
 .next{
     border-top:none;
-    padding: 16px 16px 12px;
-}
-.inner--auto{
-    border-bottom: 1px solid #EDEDED;
+    padding: 0px 16px;
 }
 .checkbox{
     appearance: none;
@@ -1690,4 +1534,52 @@ a{
 }
 .inner--checkbox  path{
     background: #000;
+}
+
+.main__loading {
+    background-color: #F8C109;
+}
+
+.lamb__index {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.lamb__index a {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+}
+.main__preloader{
+    background: #FFF4D1;
+}
+
+@media(max-width: 1000px) {
+    .lamb__index {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 600px) {
+    .lamb__index {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.signature-arrow {
+    height: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.close--icon {
+    padding: 5px 5px 5px 5px;
+    margin-right: 11px;
+}
+
+.action__tab .action__txt {
+    padding-bottom: 20px;
 }
